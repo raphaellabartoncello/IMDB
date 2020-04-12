@@ -18,6 +18,7 @@ Preview: 👉 <a href="#">IMDB Codenation</a>
 
 - [x] Página Inicial
 - [x] Redirecionar para as redes sociais
+- [x] Adicionar o LinkedIn
 - [ ] Redicionar para home (logotipo)
 - [ ] Página Lançamentos
 - [ ] Página Crítica
