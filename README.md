@@ -17,7 +17,7 @@ Preview: 👉 <a href="#">IMDB Codenation</a>
 <h2>Tasklist - Mapeamento do projeto</h2>
 
 - [x] Página Inicial
-- [ ] Redirecionar para as redes sociais
+- [x] Redirecionar para as redes sociais
 - [ ] Redicionar para home (logotipo)
 - [ ] Página Lançamentos
 - [ ] Página Crítica
