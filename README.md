@@ -1,8 +1,8 @@
 <h1>🎥 IMDB - Internet Movies Database</h1>
 
-<h2>Objetivo</h2>
+<h2>Aplicação</h2>
 
-O desafio é desenvolver a página inicial de um site de avaliação de filmes (IMDB - Internet Movies Database) utilizando apenas HTML5 e CSS3.
+Site de avaliação de filmes (IMDB - Internet Movies Database)
 
 Preview: 👉 <a href="#">IMDB Codenation</a>
 
