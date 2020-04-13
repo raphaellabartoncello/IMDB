@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<!--Definindo o idioma padrão-->
+<html lang="pt-br">
+
+<head>
+
+	<!--Definindo o tipo de conversão que deve ser adotada (utilizado o URF-8 que é completamente em ASCII e pode utilizar caracter UNICODE por meio de caracteres especiais) -->
+	<meta charset="UTF-8">
+
+	<!--Definindo nome da aba-->
+	<title>IMDB - Séries</title>
+
+	<link rel="shortcut icon" type="image/png" href="/src/images/favicon.png" />
+
+	<!-- Chamando o arquivo CSS-->
+	<link rel="stylesheet" href="styleseries.css" />
+
+</head>
+
+<body>
+
+	<!--Definições do cabeçalho da aplicação-->
+
+	<!--A classe hero permite que os elementos intenos a ela estejam alinhados (hero-head - topo, hero-body - centralizado verticalmente, hero-foot - parte inferior)-->
+	<header class="hero">
+
+		<!--Cria uma sessão para a página que se direciona para outras páginas do mesmo site (sessão de link de navegação - grupo de links)-->
+		<nav class="hero-menu">
+
+			<!--Define uma sessão como container (agrupamentos)-->
+			<section class="container">
+
+				<!--Ao clicar acessa outro link, definida classe do logotipo-->
+				<a href="/src/index.html" class="hero-logo">
+					<img src="/src/images/logo-imdb.jpg" alt="Logo IMDB" />
+				</a>
+
+				<!--Cria a classe lista para o menu do site-->
+				<ul class="hero-lista">
+					<li class="hero-lista-item"><a href="lancamentos.html">Lançamentos</a></li>
+					<li class="hero-lista-item"><a href="critica.html">Críticas</a></li>
+					<li class="hero-lista-item"><a href="em-cartaz.html">Em Cartaz</a></li>
+				</ul>
+
+				<!--Cria a classe usuário que se refere a login na página-->
+				<div class="hero-usuario">
+
+					<!--Exibe a foto do usuário-->
+					<div class="hero-usuario-foto">
+						<img src="/src/images/walter-white.jpg" alt="Walter White" />
+					</div>
+
+					<div class="hero-usuario-nome">
+						Walter White
+					</div>
+				</div>
+				</div>
+		</nav>
+
+		<!--Define o painel principal (destaque)-->
+		<!--Cria a classe conteudo e a define como container-->
+		<div class="hero-conteudo">
+			<div class="container">
+
+				<!--Título do conteúdo destaque-->
+				<h2 class="hero-titulo">Game of Thrones</h2>
+
+				<!--Classificações do  título (gênero do título)-->
+				<p class="hero-genero">
+					<a href="busca-genero.html" class="hero-genero-item">Aventura</a>
+					<a href="busca-genero.html" class="hero-genero-item">Ação</a>
+					<a href="busca-genero.html" class="hero-genero-item">Guerra</a>
+				</p>
+
+				<!--Direcionamento ao trailer do título anunciado;
+                    Definição do estilo do botão através da importação via CSS-->
+				<a href="./got/series-got.html" class="hero-botao">Assistir Trailer <i class="fa fa-play-circle-o"></i></a>
+
+				<!--Define a classe de informações sobre o lançamento-->
+				<div class="hero-informacao">
+					<p>8 temporadas</p>
+					<p>2011-2019</p>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!--Definições do corpo da aplicação-->
+
+	<!--Menu por disponibilidade e tipo-->
+	<section class="catalogo">
+
+		<!--Define a classe catálogo do tipo container para gerar os submenus-->
+		<nav class="catalogo-menu">
+			<div class="container">
+
+				<!--Lista dos tipos disponíveis no catálogo (submenus)-->
+				<ul class="catalogo-menu-lista">
+					<li class="catalogo-menu-lista-item"><a href="#">Aventura</a></li>
+					<li class="catalogo-menu-lista-item"><a href="#">Comédia</a></li>
+					<li class="catalogo-menu-lista-item"><a href="#">Ficcção</a></li>
+					<li class="catalogo-menu-lista-item"><a href="#">Romance</a></li>
+					<li class="catalogo-menu-lista-item"><a href="#">Terror</a></li>
+				</ul>
+
+			</div>
+
+		</nav>
+
+		<!--Títulos destaques-->
+
+		<div class="container">
+			<ul class="catalogo-filmes-lista">
+
+				<!--TÍTULO 1-->
+				<li class="catalogo-filmes-lista-item">
+
+					<!--Trás a imagem do título-->
+					<figure class="filme-poster">
+						<img src="/src/images/poster_da_serie_breaking_bad_faces_154_3_20180816114146.jpg" alt="" />
+						<div class="filme-poster-info">
+
+							<!--Nomeia o título dentro da imagem-->
+							<h3>Breaking Bad</h3>
+							<!--Direciona para o trailer dentro da imagem-->
+							<a href="./breaking-bad/series-breaking_bad.html" class="filme-poster-link"><i class="fa fa-play" aria-hidden="true"></i></a>
+						</div>
+					</figure>
+
+					<!--Rodapé da imagem-->
+					<div class="filme-sinopse">
+						<!--Nomeia o título fora da imagem-->
+						<h3 class="filme-sinopse-titulo">Breaking Bad</h3>
+						<!--Informa o genero predominante do título-->
+						<p class="sinopse-genero">
+							<a href="#" class="sinopse-genero-item">Drama</a>
+						</p>
+						<!--Informa a classificação média (nota)-->
+						<p class="filme-nota">
+							<i class="fa fa-heart" aria-hidden="true"></i> 7.0
+						</p>
+					</div>
+				</li>
+
+				<!--TÍTULO 2-->
+				<li class="catalogo-filmes-lista-item">
+					<figure class="filme-poster">
+						<img src="/src/images/poster-stranger-things.jpg" alt="" />
+						<div class="filme-poster-info">
+							<h3>Stranger Things</h3>
+							<a href="./stranger-things/stranger-things.html" class="filme-poster-link"><i class="fa fa-play" aria-hidden="true"></i></a>
+						</div>
+					</figure>
+
+					<div class="filme-sinopse">
+						<h3 class="filme-sinopse-titulo">Stranger Things</h3>
+						<p class="sinopse-genero">
+							<a href="./stranger-things/stranger-things.html" class="sinopse-genero-item">Terror</a>
+						</p>
+						<p class="filme-nota">
+							<i class="fa fa-heart" aria-hidden="true"></i> 7.0
+						</p>
+					</div>
+				</li>
+
+				<!--TÍTULO 3-->
+				<li class="catalogo-filmes-lista-item">
+					<figure class="filme-poster">
+						<img src="/src/images/poster-death-note.jpg" alt="" />
+						<div class="filme-poster-info">
+							<h3>Death Note</h3>
+							<a href="./death-note/death-note.html" class="filme-poster-link"><i class="fa fa-play" aria-hidden="true"></i></a>
+						</div>
+					</figure>
+
+					<div class="filme-sinopse">
+						<h3 class="filme-sinopse-titulo">Death Note</h3>
+						<p class="sinopse-genero">
+							<a href="./death-note/death-note.html" class="sinopse-genero-item">Ação</a>
+						</p>
+						<p class="filme-nota">
+							<i class="fa fa-heart" aria-hidden="true"></i> 7.0
+						</p>
+					</div>
+				</li>
+
+	<!--Definições do rodapé da aplicação-->
+
+	<!--Define a classe rodape do tipo container para gerar os submenus-->
+	<footer class="rodape">
+		<div class="container">
+
+			<!--Logo da página-->
+			<a href="/src/index.html" class="hero-logo">
+				<img src="/src/images/logo-imdb.jpg" alt="Logo IMDB" />
+			</a>
+
+
+			<!--Define a classe de logos das redes sociais da página-->
+			<ul class="rodape-lista">
+
+				<!--Twitter-->
+				<li class="rodape-lista-item icone-twitter">
+					<a href="https://twitter.com/codenationdev" target="_blank">
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+					</a>
+				</li>
+
+				<!--Facebook-->
+				<li class="rodape-lista-item icone-facebook">
+					<a href="https://www.facebook.com/dev.codenation/" target="_blank">
+						<i class="fa fa-facebook-official" aria-hidden="true"></i>
+					</a>
+				</li>
+
+				<!--Instagram-->
+				<li class="rodape-lista-item icone-instagram">
+					<a href="https://www.instagram.com/codenationdev/?hl=pt" target="_blank">
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+					</a>
+				</li>
+
+				<!--linkedIn-->
+				<li class="rodape-lista-item icone-linkedin">
+					<a href="https://www.linkedin.com/company/code-nation/?originalSubdomain=br" target="_blank">
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+	</footer>
+
+</body>
+
+</html>

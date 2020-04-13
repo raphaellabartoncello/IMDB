@@ -1,0 +1,269 @@
+/*Importar o Font Awesome para trazer os vetores*/
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+/*Importar o Google Fonts para trazer a fonte Mont Serrat*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+
+	/*Define a fonte padrão do corpo da aplicação*/
+	font-size: 10px;
+	font-family: "Montserrat", sans-serif;
+
+}
+
+/*Define as características das classes definidas como container*/
+.container {
+	margin: 0 auto;
+	position: relative;
+	width: 960px;
+}
+
+/*Define as características das classes definidas como hero*/
+.hero {
+	background-attachment: fixed;
+	/*Imagem de fundo do título destaque (título principal)*/
+	background-image: url(/src/images/gradiente-preto.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	height: 40vh;
+	justify-content: space-between;
+	padding: 20px;
+	position: relative;
+	width: 100%;
+}
+
+/*Define o comportamento das classes hero ao rolar a tela*/
+.hero:after {
+	background: linear-gradient(0deg,
+			rgba(0, 0, 0, 0.6) 0%,
+			rgba(0, 212, 255, 0) 75%);
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+/*Define o comportamento da classe hero-menu*/
+.hero-menu {
+	z-index: 2;
+	display: flex;
+}
+
+/*Define o comportamento da classe hero-menu container*/
+.hero-menu .container {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+/*Define o comportamento da classe hero-logo*/
+.hero-logo {
+	display: inline-block;
+}
+
+/*Define o comportamento da classe hero-lista*/
+.hero-lista {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*Define o comportamento da classe hero-lista-item*/
+.hero-lista-item {
+	margin: 0 25px;
+}
+
+/*Define a cor do texto do menu da classe hero-lista-item */
+.hero-lista-item a,
+.catalogo-menu-lista-item a {
+	color: #fff;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.2s ease-in-out;
+}
+
+/*Define o comportamento da classe hero-lista-item ao passar o cursor por cima*/
+.hero-lista-item a:hover {
+	color: #e4bb23;
+}
+
+/*Define o comportamento da classe hero-usuario*/
+.hero-usuario {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+/*Define o comportamento da classe hero-usuario-foto*/
+.hero-usuario-foto {
+	border-radius: 100%;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+	height: 45px;
+	margin-right: 15px;
+	overflow: hidden;
+	width: 45px;
+}
+
+/*Define as características da classe hero-usuario-nome*/
+.hero-usuario-nome {
+	color: #fff;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+/*Define as características da foto da classe hero-usuario-foto*/
+.hero-usuario-foto img {
+	width: 100%;
+	height: auto;
+}
+
+/*Define o painel principal (título destaque)*/
+
+.hero-conteudo {
+	width: 100%;
+}
+
+.hero-conteudo .container {
+	position: relative;
+	z-index: 2;
+}
+
+/*Define as características do nome do título destaque*/
+.hero-titulo {
+	color: #fff;
+	font-size: 3.5em;
+	font-weight: bold;
+	line-height: 1.2em;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+/*Define as características da classe catalogo*/
+.catalogo {
+	background-color: #f2f2f2;
+	width: 100%;
+}
+
+/*Define as características da classe catalogo-menu*/
+.catalogo-menu {
+	width: 100%;
+}
+
+/*Define as características da classe catalogo-menu-lista*/
+.catalogo-menu-lista {
+	align-items: center;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/*Define as características da classe catalogo-menu-lista-item*/
+.catalogo-menu-lista-item {
+	margin: 0 20px;
+}
+
+/*Define as características da classe catalogo-menu-lista-item no elemento <a>*/
+.catalogo-menu-lista-item a {
+	color: #e4bb23;
+	display: inline-block;
+	padding: 25px 0;
+}
+
+/*Comportamento da classe catalogo-menu-lista-item no elemento <a> quando passar o cursor sobre*/
+.catalogo-menu-lista-item a:hover {
+	box-shadow: inset 0 -1px 0 #e4bb23;
+}
+
+/*Define as caraterísticas do corpo*/
+.corpo {
+	align-items: flex-start;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px 0;
+	width: 100%;
+}
+
+	/*Define as características da classe corpo da página em item*/
+.corpo-item {
+		background-color: #fff;
+		border-radius: 8px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 80px;
+		overflow: hidden;
+		width: 100%;
+		text-align: center;
+	}
+
+	/*Define as características da classe rodapé*/
+
+	.rodape {
+		background-color: #fff;
+		color: #bababa;
+		padding: 20px 0;
+		text-align: center;
+		width: 100%;
+	}
+
+	.rodape .container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.rodape-lista {
+		padding: 0;
+		list-style: none;
+		display: flex;
+	}
+
+	.rodape-lista-item {
+		margin: 0 20px;
+	}
+
+	.rodape-lista-item:last-child {
+		margin-right: 0;
+	}
+
+	.rodape-lista-item a {
+		font-size: 2.5em;
+		color: #bababa;
+		text-decoration: none;
+		transition: all 0.2s ease-in-out;
+	}
+
+	/*Define o comportamento ao passar o cursor sobre o ícone da rede social*/
+
+	.icone-twitter a:hover {
+		color: #55acee;
+	}
+
+	.icone-facebook a:hover {
+		color: #3b5998;
+	}
+
+	.icone-instagram a:hover {
+		color: #e95950;
+	}
+
+	.icone-linkedin a:hover {
+		color: #3b5998;
+	}
