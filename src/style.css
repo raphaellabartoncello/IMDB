@@ -27,7 +27,7 @@ body {
 .hero {
     background-attachment: fixed;
     /*Imagem de fundo do título destaque (título principal)*/
-	background-image: url(images/capa-madmax2.jpg);
+	background-image: url(images/capa-viuva-negra.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
