@@ -21,15 +21,11 @@ Preview: 👉 <a href="#">IMDB Codenation</a>
 - [x] Adicionar o LinkedIn
 - [x] Redicionar para home (logotipo)
 - [x] Adicionar favicon
-- [ ] Página Lançamentos
-- [ ] Página Crítica
-- [ ] Página Em Cartaz
+- [x] Página Lançamentos
+- [x] Página Crítica
+- [x] Página Em Cartaz
+- [x] Página Detalhes do título
 - [ ] Link para categoria dos títulos (gênero)
-- [ ] Pop-up avaliar (nota)
-- [ ] Página Detalhes do título
-- [ ] Página de login
-- [ ] Página de cadastro
-- [ ] Menu do usuário
 
 <h2>Layout</h2>
 
