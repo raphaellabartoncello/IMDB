@@ -1,0 +1,177 @@
+/*Importar o Font Awesome para trazer os vetores*/
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+/*Importar o Google Fonts para trazer a fonte Mont Serrat*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+
+    /*Define a fonte padrão do corpo da aplicação*/
+    font-size: 10px;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+/*Define as características das classes definidas como container*/
+.container {
+	margin: 0 auto;
+	position: relative;
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Define as características das classes definidas como hero*/
+.hero {
+    background-attachment: fixed;
+    /*Imagem de fundo do título destaque (título principal)*/
+	background-image: url(/src/images/capa-imdb.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	height: 89vh;
+	justify-content: space-between;
+	padding: 20px;
+	position: relative;
+	width: 100%;
+}
+
+/*Define o comportamento das classes hero ao rolar a tela*/
+.hero:after {
+	background: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.6) 0%,
+		rgba(0, 212, 255, 0) 75%
+	);
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+/*Define o comportamento da classe hero-menu*/
+.hero-menu {
+	z-index: 2;
+    display: flex;
+}
+
+/*Define o comportamento da classe hero-menu container*/
+.hero-menu .container {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+/*Define o painel principal (título destaque)*/
+
+.hero-conteudo {
+	width: 100%;
+}
+
+.hero-conteudo .container {
+	position: relative;
+	z-index: 2;
+}
+
+/*Define as características do nome do título destaque*/
+.hero-titulo {
+	color: #fff;
+	font-size: 4    .5em;
+	font-weight: bold;
+	line-height: 1.2em;
+	margin: 0;
+    text-transform: uppercase;
+}
+
+
+/*Define a cor do botão para assistir o trailer do título principal*/
+.hero-botao {
+	display: inline-block;
+	padding: 20px 80px;
+	color: #000;
+	font-size: 1.5em;
+	text-decoration: none;
+	background-color: #e4bb23;
+	border-radius: 40px;
+	position: relative;
+	transition: all 0.2s ease-in-out;
+}
+
+/*Define as características do botão*/
+.hero-botao i {
+	font-size: 1.5em;
+	position: absolute;
+	right: 15px;
+	top: 12px;
+}
+
+/*Define a cor do botão "Assistir trailer"*/
+.hero-botao:hover {
+	background-color: #bc9a1d;
+}
+
+
+/*Define as características da classe rodapé*/
+
+.rodape {
+	background-color: #fff;
+	color: #bababa;
+	padding: 1px 0;
+	text-align: center;
+	width: 100%;
+}
+
+.rodape .container {
+	display: flex;
+    /*Alinhamento*/
+    justify-content: center;
+	align-items: center;
+}
+
+.rodape-lista {
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+
+.rodape-lista-item {
+	margin: 0 20px;
+}
+
+.rodape-lista-item:last-child {
+	margin-right: 0;
+}
+
+.rodape-lista-item a {
+	font-size: 2.5em;
+	color: #bababa;
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+}
+
+/*Define o comportamento ao passar o cursor sobre o ícone da rede social*/
+
+.icone-twitter a:hover {
+	color: #55acee;
+}
+
+.icone-facebook a:hover {
+	color: #3b5998;
+}
+
+.icone-instagram a:hover {
+	color: #e95950;
+}
+
+.icone-linkedin a:hover {
+	color: #3b5998;
+}

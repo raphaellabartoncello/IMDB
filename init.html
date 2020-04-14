@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<!--Definindo o idioma padrão-->
+<html lang="pt-br">
+
+<head>
+
+    <!--Definindo o tipo de conversão que deve ser adotada (utilizado o URF-8 que é completamente em ASCII e pode utilizar caracter UNICODE por meio de caracteres especiais) -->
+    <meta charset="UTF-8">
+
+    <!--Definindo nome da aba-->
+    <title>IMDB</title>
+
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+
+    <!-- Chamando o arquivo CSS-->
+    <link rel="stylesheet" href="./style-init.css" />
+
+</head>
+
+<body>
+
+    <!--Definições do cabeçalho da aplicação-->
+
+    <!--A classe hero permite que os elementos intenos a ela estejam alinhados (hero-head - topo, hero-body - centralizado verticalmente, hero-foot - parte inferior)-->
+
+    
+    <header class="hero">
+
+        <!--Define o painel principal (destaque)-->
+        <!--Cria a classe conteudo e a define como container-->
+
+        <div class="hero-menu">
+            
+        </div>
+
+        <div class="hero-conteudo">
+			<div class="container">
+
+				<!--Título do conteúdo destaque-->
+				<h2 class="hero-titulo"></h2>
+
+				<!--Direcionamento ao trailer do título anunciado;
+                    Definição do estilo do botão através da importação via CSS-->
+				<a href="/src/index.html" class="hero-botao">Entre <i class="fa fa-play-circle-o"></i></a>
+
+			</div>
+		</div>
+	</header>
+
+    <!--Definições do rodapé da aplicação-->
+
+    <!--Define a classe rodape do tipo container para gerar os submenus-->
+    <footer class="rodape">
+        <div class="container">
+
+            <!--Define a classe de logos das redes sociais da página-->
+            <ul class="rodape-lista">
+
+                <!--Twitter-->
+                <li class="rodape-lista-item icone-twitter">
+                    <a href="https://twitter.com/codenationdev" target="_blank">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+                <!--Facebook-->
+                <li class="rodape-lista-item icone-facebook">
+                    <a href="https://www.facebook.com/dev.codenation/" target="_blank">
+                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+                <!--Instagram-->
+                <li class="rodape-lista-item icone-instagram">
+                    <a href="https://www.instagram.com/codenationdev/?hl=pt" target="_blank">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+                <!--linkedIn-->
+                <li class="rodape-lista-item icone-linkedin">
+                    <a href="https://www.linkedin.com/company/code-nation/?originalSubdomain=br" target="_blank">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
