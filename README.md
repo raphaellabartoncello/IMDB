@@ -24,13 +24,22 @@ Preview: 👉 <a href="#">IMDB Codenation</a>
 - [x] Página Lançamentos
 - [x] Página Crítica
 - [x] Página Em Cartaz
-- [x] Página Detalhes do título
-- [ ] Link para categoria dos títulos (gênero)
+- [x] Página Bilheteria
+- [x] Página Em Breve
+- [x] Página Nos Cinemas
+- [x] Página Trailers
+- [x] Página Séries
+- [x] Página Detalhes de cada série
+- [x] Página Detalhes de cada filme
 
 <h2>Layout</h2>
 
-<img src="./images/Site1.png">
+<img src="/src/images/print-1.png">
 
-<img src="./images/Site2.png">
+<img src="/src/images/print-2.png">
 
-<img src="./images/Site3.png">
+<img src="/src/images/print-3.png">
+
+<img src="/src/images/print-4.png">
+
+<img src="/src/images/print-5.png">
