@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<!--Definindo o idioma padrão-->
+<html lang="pt-br">
+
+<head>
+
+	<!--Definindo o tipo de conversão que deve ser adotada (utilizado o URF-8 que é completamente em ASCII e pode utilizar caracter UNICODE por meio de caracteres especiais) -->
+	<meta charset="UTF-8">
+
+	<!--Definindo nome da aba-->
+	<title>IMDB - Liga da Justiça</title>
+
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+
+	<!-- Chamando o arquivo CSS-->
+	<link rel="stylesheet" href="/src/movies/liga-da-justica/styleliga.css" />
+
+</head>
+<body>
+
+	<!--Definições do cabeçalho da aplicação-->
+
+	<!--A classe hero permite que os elementos intenos a ela estejam alinhados (hero-head - topo, hero-body - centralizado verticalmente, hero-foot - parte inferior)-->
+	<header class="hero">
+
+		<!--Cria uma sessão para a página que se direciona para outras páginas do mesmo site (sessão de link de navegação - grupo de links)-->
+		<nav class="hero-menu">
+
+			<!--Define uma sessão como container (agrupamentos)-->
+			<section class="container">
+
+				<!--Ao clicar acessa outro link, definida classe do logotipo-->
+				<a href="/src/index.html" class="hero-logo">
+					<img src="/src/images/logo-imdb.jpg" alt="Logo IMDB" />
+				</a>
+
+				<!--Cria a classe lista para o menu do site-->
+				<ul class="hero-lista">
+					<li class="hero-lista-item"><a href="/src/ms/lancamentos.html">Lançamentos</a></li>
+					<li class="hero-lista-item"><a href="/src/ms/critica.html">Críticas</a></li>
+					<li class="hero-lista-item"><a href="/src/ms/em-cartaz.html">Em Cartaz</a></li>
+				</ul>
+
+				<!--Cria a classe usuário que se refere a login na página-->
+				<div class="hero-usuario">
+
+					<!--Exibe a foto do usuário-->
+					<div class="hero-usuario-foto">
+						<img src="/src/images/walter-white.jpg" alt="Walter White" />
+					</div>
+
+					<div class="hero-usuario-nome">
+						Walter White
+					</div>
+				</div>
+				</div>
+		</nav>
+
+		<!--Define o painel principal (destaque)-->
+		<!--Cria a classe conteudo e a define como container-->
+		<div class="hero-conteudo">
+			<div class="container">
+
+				<!--Título do conteúdo destaque-->
+				<h2 class="hero-titulo">Liga da Justiça</h2>
+
+				<!--Classificações do  título (gênero do título)-->
+				<p class="hero-genero">
+					<a href="#" class="hero-genero-item">Ação</a>
+					<a href="#" class="hero-genero-item">Fantasia</a>
+					<a href="#" class="hero-genero-item">Ficção Científica</a>
+				</p>
+
+			</div>
+		</div>
+	</header>
+	
+		<!--Define a classe catálogo do tipo container para gerar os submenus-->
+		<nav class="catalogo-menu">
+			<div class="container">
+
+				<!--Lista dos tipos disponíveis no catálogo (submenus)-->
+				<ul class="catalogo-menu-lista">
+                    <li class="catalogo-menu-lista-item"><a href="/src/index.html">Filmes</a></li>
+					<li class="catalogo-menu-lista-item"><a href="http://www.adorocinema.com/filmes/filme-126527/criticas-adorocinema/" target="_blank">Crítica</a></li>
+					<li class="catalogo-menu-lista-item"><a href="https://www.omelete.com.br/liga-da-justica/liga-da-justica-parte-1" target="_blank">Sinopse</a></li>
+				</ul>
+
+			</div>
+
+		</nav>
+
+	<div class="container">
+
+		<iframe width="990" height="550" src="https://www.youtube.com/embed/H0Z7ewOXCKw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+		</div>
+
+
+		<!--Definições do rodapé da aplicação-->
+
+	<!--Define a classe rodape do tipo container para gerar os submenus-->
+	<footer class="rodape">
+		<div class="container">
+
+			<!--Logo da página-->
+			<a href="/src/index.html" class="hero-logo">
+				<img src="/src/images/logo-imdb.jpg" alt="Logo IMDB" />
+			</a>
+
+
+			<!--Define a classe de logos das redes sociais da página-->
+			<ul class="rodape-lista">
+
+				<!--Twitter-->
+				<li class="rodape-lista-item icone-twitter">
+					<a href="https://twitter.com/codenationdev" target="_blank">
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+					</a>
+				</li>
+
+				<!--Facebook-->
+				<li class="rodape-lista-item icone-facebook">
+					<a href="https://www.facebook.com/dev.codenation/" target="_blank">
+						<i class="fa fa-facebook-official" aria-hidden="true"></i>
+					</a>
+				</li>
+
+				<!--Instagram-->
+				<li class="rodape-lista-item icone-instagram">
+					<a href="https://www.instagram.com/codenationdev/?hl=pt" target="_blank">
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+					</a>
+				</li>
+
+				<!--linkedIn-->
+				<li class="rodape-lista-item icone-linkedin">
+					<a href="https://www.linkedin.com/company/code-nation/?originalSubdomain=br" target="_blank">
+						<i class="fa fa-linkedin" aria-hidden="true"></i>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+	</footer>
+
+</body>
+
+</html> 
